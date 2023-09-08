@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: space-between; */
     padding: 20px 70px 50px 32px;
 }
 .header-left{
@@ -103,6 +102,9 @@
     background-color: #FF0000;
     border-radius: 50%;
 }
+.header-buttons__search-mobile{
+    display: none;
+}
 .header-buttons__profile{
     width: 40px;
     height: 40px;
@@ -111,4 +113,45 @@
 }
 .header-buttons__profile:focus{
     cursor: pointer;
+}
+@media screen and (max-width: 800px){
+    .header{
+        padding: 12px 16px 12px 16px;
+        position: fixed;
+        background-color: white;
+        width: calc(100% - 32px);
+        z-index: 1;
+    }
+    .header__burger{
+        display: none;
+    }
+    .header__logo{
+        padding: 0;
+    }
+    .search-form{
+        display: none;
+    }
+    .header-buttons{
+        gap: 24px;
+    }
+    .header-buttons__menu{
+        display: none;
+    }
+    .header-buttons__camera{
+        display: none;
+    }
+    .header-buttons__bell{
+        display: none;
+    }
+    .header-buttons__search-mobile{
+        display: block;
+        background: white;
+        border: none;
+        background-image: url(/images/header/search.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 18.21px;
+        width: 18.21px;
+        height: 18.21px;
+    }
 }

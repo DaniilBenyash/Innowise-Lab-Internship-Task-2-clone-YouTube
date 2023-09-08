@@ -1,6 +1,5 @@
 .main-home{
     max-width: calc(100% - 255px);
-    max-width: auto;
 }
 .main-home__line{
     display: flex;
@@ -90,4 +89,32 @@
     flex-direction: row;
     justify-content: space-between;
     margin-top: 4px;
+}
+@media screen and (max-width: 800px) {
+    .main-home{
+        max-width: 100%;
+        padding-top: 64px;
+    }
+    .main-home__line{
+        display: none;
+    }
+    .section-home{
+        display: none;
+        
+    }
+    .section-home_mobile{
+        display: flex;
+        flex-direction: column;
+        padding: 0 16px;
+        margin: 0;
+        align-items: center;
+        gap: 30px;
+        padding-bottom: 64.55px;
+    }
+    .card_small{
+        width: 100%;
+    }
+    .card__image img{
+        width: 100%;
+    }
 }
