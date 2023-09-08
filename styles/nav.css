@@ -1,0 +1,56 @@
+.nav{
+    width: 221px;
+    padding-left: 34px;
+    height: 100%;
+}
+.nav__buttons{
+    display: flex;
+    flex-direction: column;
+}
+.nav__button{
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    font-size: 16px;
+    line-height: 20.08px;
+    font-weight: 500;
+    color: #898989;
+}
+
+.nav__button_red{
+    color: #ff0000;
+}
+.nav__button_padding_28{
+    padding-bottom: 28px;
+}
+.nav__button_padding_60{
+    padding-bottom: 60px;
+}
+.nav__button_padding_29{
+    padding-bottom: 29px;
+}
+.nav__button_padding_58{
+    padding-bottom: 58px;
+}
+.nav__button_padding-last{
+    margin: 104px 0 40px;
+}
+.nav__subs h3{
+    font-size: 18px;
+    line-height: 22.59px;
+    margin-bottom: 30px;
+}
+.nav__sub{
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    line-height: 20.08px;
+    color: #898989;
+    margin-bottom: 23px;
+}
