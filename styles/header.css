@@ -1,0 +1,109 @@
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 70px 50px 32px;
+    width: 100%;
+}
+.header_burger{
+    background: white;
+    border: none;
+}
+.header_burger:focus{
+    cursor: pointer;
+}
+.header_logo{
+    padding: 0 50px 0 28px;
+}
+.search-form{
+    margin-right: 100px;
+    display: flex;
+    flex-direction: row;
+}
+.search-form_input{
+    width: 799px;
+    height: 44px;
+    border: none;
+    background: #EBEBEB;
+    border-radius: 20px 0 0 20px;
+    padding-left: 23px;
+    color: #30384C;
+    font-size: 16px;
+    line-height: 20.08px;
+    outline: none;
+}
+.search-form_button{
+    background: #EBEBEB;
+    border: none;
+    background-image: url(/images/icons/Header/Search.png);
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 18.21px;
+    width: 31px;
+    padding-right: 12.71px;
+    border-radius: 0 20px 20px 0;
+    margin-right: 505px;
+}
+.search-form_button:focus{
+    cursor: pointer;
+}
+.header-buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 50px;
+}
+.header-buttons_camera{
+    background: none;
+    border: none;
+    background-image: url(/images/icons/Header/Camera.png);
+    background-size: 27px 20px;
+    width: 27px;
+    height: 20px;
+}
+.header-buttons_camera:focus{
+    cursor: pointer;
+}
+.header-buttons_menu{
+    background: none;
+    border: none;
+    background-image: url(/images/icons/Header/Menu.png);
+    background-size: 21px 21px;
+    width: 21px;
+    height: 21px;
+}
+.header-buttons_menu:focus{
+    cursor: pointer;
+}
+.header-buttons_bell{
+    position: relative;
+    background: none;
+    border: none;
+    background-image: url(/images/icons/Header/bell.png);
+    background-size: 22px 26px;
+    width: 22px;
+    height: 26px;
+}
+.header-buttons_bell:focus{
+    cursor: pointer;
+}
+.header-buttons_bell-value{
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    width: 18px;
+    height: 18px;
+    color: #FFFFFF;
+    background-color: #FF0000;
+    border-radius: 50%;
+}
+.header-buttons_profile{
+    width: 40px;
+    height: 40px;
+    background: none;
+    border: none;
+}
+.header-buttons_profile:focus{
+    cursor: pointer;
+}
