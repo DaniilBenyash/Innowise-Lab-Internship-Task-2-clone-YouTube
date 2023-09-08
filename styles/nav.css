@@ -1,5 +1,5 @@
 .nav{
-    width: 221px;
+    min-width: 221px;
     padding-left: 34px;
     height: 100%;
 }

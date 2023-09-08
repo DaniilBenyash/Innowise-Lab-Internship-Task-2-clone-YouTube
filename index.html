@@ -7,51 +7,252 @@
     <link rel="stylesheet" href="/styles/index.css">
     <link rel="stylesheet" href="/styles/header.css">
     <link rel="stylesheet" href="/styles/nav.css">
+    <link rel="stylesheet" href="/styles/main-home.css">
 </head>
 <body>
     <header class="header">
-        <button class="header__burger"><img src="/images/Header/burger.png" alt="Burger"></button>
-        <img class="header__logo" src="/images/Header/logo-black.png" alt="">
-        <div class="search-form">
+        <div class="header-left">
+            <button class="header__burger"><img src="/images/header/burger.png" alt="Burger"></button>
+            <img class="header__logo" src="/images/header/logo-black.png" alt="">
+            <div class="search-form">
             <input type="search" class="search-form__input" placeholder="Search">
             <button class="search-form__button"></button>
+            </div>
         </div>
         <div class="header-buttons">
             <button class="header-buttons__camera"></button>
             <button class="header-buttons__menu"></button>
             <button class="header-buttons__bell"><div class="header-buttons__bell-value">3</div></button>
-            <button class="header-buttons__profile"><img src="/images/Header/profile.png" alt="profile"></button>
+            <button class="header-buttons__profile"><img src="/images/header/profile.png" alt="profile"></button>
         </div>
     </header>
-    <Main>
+    <section class="section">
         <nav class="nav">
             <div class="nav__buttons">
-                <button class="nav__button nav__button_red nav__button_padding_28"><img src="/images/Navigation/icons/home.png" alt="home">Home</button>
-                <button class="nav__button nav__button_padding_28"><img src="/images/Navigation/icons/trending.png" alt="home">Trending</button>
-                <button class="nav__button nav__button_padding_60"><img src="/images/Navigation/icons/subscriptions.png" alt="home">Subcriptions</button>
-                <button class="nav__button nav__button_padding_29"><img src="/images/Navigation/icons/library.png" alt="home">Library</button>
-                <button class="nav__button nav__button_padding_29"><img src="/images/Navigation/icons/history.png" alt="home">History</button>
-                <button class="nav__button nav__button_padding_29"><img src="/images/Navigation/icons/watch-later.png" alt="home">Watch later</button>
-                <button class="nav__button nav__button_padding_29"><img src="/images/Navigation/icons/favourites.png" alt="home">Favourites</button>
-                <button class="nav__button nav__button_padding_29"><img src="/images/Navigation/icons/liked-videos.png" alt="home">Liked videos</button>
-                <button class="nav__button nav__button_padding_29"><img src="/images/Navigation/icons/music.png" alt="home">Music</button>
-                <button class="nav__button nav__button_padding_29"><img src="/images/Navigation/icons/games.png" alt="home">Games</button>
-                <button class="nav__button nav__button_padding_58"><img src="/images/Navigation/icons/show-more.png" alt="home">Show more</button>
+                <button class="nav__button nav__button_red nav__button_padding_28"><img src="/images/navigation/icons/home.png" alt="home">Home</button>
+                <button class="nav__button nav__button_padding_28"><img src="/images/navigation/icons/trending.png" alt="home">Trending</button>
+                <button class="nav__button nav__button_padding_60"><img src="/images/navigation/icons/subscriptions.png" alt="home">Subcriptions</button>
+                <button class="nav__button nav__button_padding_29"><img src="/images/navigation/icons/library.png" alt="home">Library</button>
+                <button class="nav__button nav__button_padding_29"><img src="/images/navigation/icons/history.png" alt="home">History</button>
+                <button class="nav__button nav__button_padding_29"><img src="/images/navigation/icons/watch-later.png" alt="home">Watch later</button>
+                <button class="nav__button nav__button_padding_29"><img src="/images/navigation/icons/favourites.png" alt="home">Favourites</button>
+                <button class="nav__button nav__button_padding_29"><img src="/images/navigation/icons/liked-videos.png" alt="home">Liked videos</button>
+                <button class="nav__button nav__button_padding_29"><img src="/images/navigation/icons/music.png" alt="home">Music</button>
+                <button class="nav__button nav__button_padding_29"><img src="/images/navigation/icons/games.png" alt="home">Games</button>
+                <button class="nav__button nav__button_padding_58"><img src="/images/navigation/icons/show-more.png" alt="home">Show more</button>
             </div>
             <div class="nav__subs">
                 <h3>Subscription</h3>
-                <button class="nav__sub"><img src="/images/Navigation/people/person1.png" alt="profile subscription">Gussie Singleton</button>
-                <button class="nav__sub"><img src="/images/Navigation/people/person2.png" alt="profile subscription">Nora Francis</button>
-                <button class="nav__sub"><img src="/images/Navigation/people/person3.png" alt="profile subscription">Belle Briggs</button>
-                <button class="nav__sub"><img src="/images/Navigation/people/person4.png" alt="profile subscription">Eunice Cortez</button>
-                <button class="nav__sub"><img src="/images/Navigation/people/person5.png" alt="profile subscription">Emma Hanson</button>
-                <button class="nav__sub"><img src="/images/Navigation/people/person6.png" alt="profile subscription">Leah Berry</button>
+                <button class="nav__sub"><img src="/images/navigation/people/person1.png" alt="profile subscription">Gussie Singleton</button>
+                <button class="nav__sub"><img src="/images/navigation/people/person2.png" alt="profile subscription">Nora Francis</button>
+                <button class="nav__sub"><img src="/images/navigation/people/person3.png" alt="profile subscription">Belle Briggs</button>
+                <button class="nav__sub"><img src="/images/navigation/people/person4.png" alt="profile subscription">Eunice Cortez</button>
+                <button class="nav__sub"><img src="/images/navigation/people/person5.png" alt="profile subscription">Emma Hanson</button>
+                <button class="nav__sub"><img src="/images/navigation/people/person6.png" alt="profile subscription">Leah Berry</button>
             </div>
-            <button class="nav__button nav__button_padding-last"><img src="/images/Navigation/icons/setting.png" alt="setting">Setting</button>
+            <button class="nav__button nav__button_padding-last"><img src="/images/navigation/icons/setting.png" alt="setting">Setting</button>
         </nav>
-        <section>
-            
-        </section>
-    </Main>
+        <main class="main-home">
+            <div class="main-home__line">
+                <div class="profile-home"><img src="/images/main-home/profile-home.png" alt="">Dollie Blair</div>
+                <div class="main-home__arrows">
+                    <img src="/images/main-home/arrow-left.png" alt="arrow left">
+                    <img src="/images/main-home/arrow-right.png" alt="arrow right">
+                </div>
+            </div>
+            <section class="section-home">
+                <article class="card card_small">
+                    <div class="card__image">
+                        <img src="/images/main-home/video-small.png" alt="video">
+                        <div class="card__time">4:15</div>
+                    </div>
+                    <h4 class="card__title">A Brief History Of Creation</h4>
+                    <div class="card__info">
+                        <p>80k views · 3 days ago</p>
+                        <p>Dollie Blair</p>
+                    </div>
+                </article>
+                <article class="card card_small">
+                    <div class="card__image">
+                        <img src="/images/main-home/video-small.png" alt="video">
+                        <div class="card__time">4:15</div>
+                    </div>
+                    <h4 class="card__title">A Brief History Of Creation</h4>
+                    <div class="card__info">
+                        <p>80k views · 3 days ago</p>
+                        <p>Dollie Blair</p>
+                    </div>
+                </article>
+                <article class="card card_small">
+                    <div class="card__image">
+                        <img src="/images/main-home/video-small.png" alt="video">
+                        <div class="card__time">4:15</div>
+                    </div>
+                    <h4 class="card__title">A Brief History Of Creation</h4>
+                    <div class="card__info">
+                        <p>80k views · 3 days ago</p>
+                        <p>Dollie Blair</p>
+                    </div>
+                </article>
+                <article class="card card_small">
+                    <div class="card__image">
+                        <img src="/images/main-home/video-small.png" alt="video">
+                        <div class="card__time">4:15</div>
+                    </div>
+                    <h4 class="card__title">A Brief History Of Creation</h4>
+                    <div class="card__info">
+                        <p>80k views · 3 days ago</p>
+                        <p>Dollie Blair</p>
+                    </div>
+                </article>
+                <article class="card card_small">
+                    <div class="card__image">
+                        <img src="/images/main-home/video-small.png" alt="video">
+                        <div class="card__time">4:15</div>
+                    </div>
+                    <h4 class="card__title">A Brief History Of Creation</h4>
+                    <div class="card__info">
+                        <p>80k views · 3 days ago</p>
+                        <p>Dollie Blair</p>
+                    </div>
+                </article>
+                <article class="card card_small">
+                    <div class="card__image">
+                        <img src="/images/main-home/video-small.png" alt="video">
+                        <div class="card__time">4:15</div>
+                    </div>
+                    <h4 class="card__title">A Brief History Of Creation</h4>
+                    <div class="card__info">
+                        <p>80k views · 3 days ago</p>
+                        <p>Dollie Blair</p>
+                    </div>
+                </article>
+            </section>
+            <div class="main-home__line">
+                <h2 class="main-home__line-title">Recommended</h2>
+                <div class="main-home__arrows">
+                    <img src="/images/main-home/arrow-left.png" alt="arrow left">
+                    <img src="/images/main-home/arrow-right.png" alt="arrow right">
+                </div>
+            </div>
+            <section class="section-home">
+                <article class="card card_big">
+                    <div class="card__image">
+                        <img src="/images/main-home/video-big.png" alt="video">
+                        <div class="card__time">4:15</div>
+                    </div>
+                    <h4 class="card__title">Dude You Re Getting a Telescope</h4>
+                    <div class="card__info">
+                        <p>34k views · 5 month ago</p>
+                        <p>Gussie French</p>
+                    </div>
+                </article>
+                <article class="card card_big">
+                    <div class="card__image">
+                        <img src="/images/main-home/video-big.png" alt="video">
+                        <div class="card__time">4:15</div>
+                    </div>
+                    <h4 class="card__title">Dude You Re Getting a Telescope</h4>
+                    <div class="card__info">
+                        <p>34k views · 5 month ago</p>
+                        <p>Gussie French</p>
+                    </div>
+                </article>
+                <article class="card card_big">
+                    <div class="card__image">
+                        <img src="/images/main-home/video-big.png" alt="video">
+                        <div class="card__time">4:15</div>
+                    </div>
+                    <h4 class="card__title">Dude You Re Getting a Telescope</h4>
+                    <div class="card__info">
+                        <p>34k views · 5 month ago</p>
+                        <p>Gussie French</p>
+                    </div>
+                </article>
+            </section>
+            <div class="main-home__line">
+                <div class="profile-home">
+                    <img src="/images/main-home/profile-home2.png" alt="">
+                    <div class="profile-home__name">
+                        <p>Food & Drink</p>
+                        <p class="profile-home__recommended">Recommended channel for you</p>
+                    </div>
+                </div>
+                <div class="main-home__arrows">
+                    <img src="/images/main-home/arrow-left.png" alt="arrow left">
+                    <img src="/images/main-home/arrow-right.png" alt="arrow right">
+                </div>
+                
+            </div>
+            <section class="section-home">
+                <article class="card card_small">
+                    <div class="card__image">
+                        <img src="/images/main-home/video-small.png" alt="video">
+                        <div class="card__time">4:15</div>
+                    </div>
+                    <h4 class="card__title">A Brief History Of Creation</h4>
+                    <div class="card__info">
+                        <p>80k views · 3 days ago</p>
+                        <p>Dollie Blair</p>
+                    </div>
+                </article>
+                <article class="card card_small">
+                    <div class="card__image">
+                        <img src="/images/main-home/video-small.png" alt="video">
+                        <div class="card__time">4:15</div>
+                    </div>
+                    <h4 class="card__title">A Brief History Of Creation</h4>
+                    <div class="card__info">
+                        <p>80k views · 3 days ago</p>
+                        <p>Dollie Blair</p>
+                    </div>
+                </article>
+                <article class="card card_small">
+                    <div class="card__image">
+                        <img src="/images/main-home/video-small.png" alt="video">
+                        <div class="card__time">4:15</div>
+                    </div>
+                    <h4 class="card__title">A Brief History Of Creation</h4>
+                    <div class="card__info">
+                        <p>80k views · 3 days ago</p>
+                        <p>Dollie Blair</p>
+                    </div>
+                </article>
+                <article class="card card_small">
+                    <div class="card__image">
+                        <img src="/images/main-home/video-small.png" alt="video">
+                        <div class="card__time">4:15</div>
+                    </div>
+                    <h4 class="card__title">A Brief History Of Creation</h4>
+                    <div class="card__info">
+                        <p>80k views · 3 days ago</p>
+                        <p>Dollie Blair</p>
+                    </div>
+                </article>
+                <article class="card card_small">
+                    <div class="card__image">
+                        <img src="/images/main-home/video-small.png" alt="video">
+                        <div class="card__time">4:15</div>
+                    </div>
+                    <h4 class="card__title">A Brief History Of Creation</h4>
+                    <div class="card__info">
+                        <p>80k views · 3 days ago</p>
+                        <p>Dollie Blair</p>
+                    </div>
+                </article>
+                <article class="card card_small">
+                    <div class="card__image">
+                        <img src="/images/main-home/video-small.png" alt="video">
+                        <div class="card__time">4:15</div>
+                    </div>
+                    <h4 class="card__title">A Brief History Of Creation</h4>
+                    <div class="card__info">
+                        <p>80k views · 3 days ago</p>
+                        <p>Dollie Blair</p>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </section>
 </body>
 </html>
