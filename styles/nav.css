@@ -1,7 +1,8 @@
 .nav{
-    min-width: 221px;
-    padding-left: 34px;
+    min-width: 224px;
+    padding-left: 31px;
     height: 100%;
+    font-family: Mulish, sans-serif;
 }
 .nav__buttons{
     display: flex;
@@ -18,7 +19,13 @@
     font-weight: 500;
     color: #898989;
 }
-
+.nav__button div{
+    width: 21px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .nav__button_red{
     color: #ff0000;
 }
@@ -41,6 +48,7 @@
     font-size: 18px;
     line-height: 22.59px;
     margin-bottom: 30px;
+    letter-spacing: 0.3px;
 }
 .nav__sub{
     background: none;
@@ -54,8 +62,11 @@
     color: #898989;
     margin-bottom: 23px;
 }
-.nav-mobile{
+.nav_mobile{
     display: none;
+}
+#switchTheme:focus{
+    cursor: pointer;
 }
 @media screen and (max-width: 800px){
     .nav{
@@ -68,11 +79,11 @@
         display: flex;
         flex-direction: row;
         align-items: flex-end;
-        justify-content: space-evenly;
+        justify-content: space-around;
         background-color: white;
         border-top: 1px solid #f1f1f1;
         width: 100%;
-        padding: 13px 0 11px;
+        padding: 10px 0 8px 2px;
     }
     .nav__button{
         flex-direction: column;

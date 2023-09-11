@@ -11,22 +11,23 @@
     width: 100%;
 }
 .header__burger{
-    background: white;
+    background: none;
     border: none;
-}
-.header__burger:focus{
-    cursor: pointer;
+    padding-top: 3px;
 }
 .header__logo{
-    padding: 0 50px 0 28px;
+    padding: 0 59px 0 28px;
+    flex-shrink: 0;
 }
 .search-form{
     margin-right: 100px;
     display: flex;
     flex-direction: row;
     width: 100%;
+    max-width: 830px;
 }
 .search-form__input{
+    display: block;
     width: 100%;
     height: 44px;
     border: none;
@@ -41,17 +42,14 @@
 .search-form__button{
     background: #EBEBEB;
     border: none;
-    background-image: url(/images/header/search.png);
-    background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 18.21px;
-    width: 31px;
-    padding-right: 12.71px;
     border-radius: 0 20px 20px 0;
+    width: 40px;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-right: 12.31px;
 }
-.search-form__button:focus{
-    cursor: pointer;
-}
+
 .header-buttons{
     display: flex;
     flex-direction: row;
@@ -61,46 +59,28 @@
 .header-buttons__camera{
     background: none;
     border: none;
-    background-image: url(/images/header/camera.png);
     background-size: 27px 20px;
-    width: 27px;
-    height: 20px;
-}
-.header-buttons__camera:focus{
-    cursor: pointer;
 }
 .header-buttons__menu{
     background: none;
     border: none;
-    background-image: url(/images/header/menu.png);
     background-size: 21px 21px;
-    width: 21px;
-    height: 21px;
-}
-.header-buttons__menu:focus{
-    cursor: pointer;
 }
 .header-buttons__bell{
     position: relative;
     background: none;
     border: none;
-    background-image: url(/images/header/bell.png);
-    background-size: 22px 26px;
-    width: 22px;
-    height: 26px;
-}
-.header-buttons__bell:focus{
-    cursor: pointer;
 }
 .header-buttons__bell-value{
     position: absolute;
     top: -5px;
     right: -5px;
-    width: 18px;
-    height: 18px;
+    width: 17px;
+    height: 17px;
     color: #FFFFFF;
     background-color: #FF0000;
     border-radius: 50%;
+    font-size: 12px;
 }
 .header-buttons__search-mobile{
     display: none;
@@ -145,13 +125,14 @@
     }
     .header-buttons__search-mobile{
         display: block;
-        background: white;
-        border: none;
-        background-image: url(/images/header/search.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 18.21px;
-        width: 18.21px;
-        height: 18.21px;
+        flex-shrink: 0;
+    }
+    .header-buttons__profile{
+        width: max-content;
+        height: max-content;
+    }
+    .header-buttons__profile img{
+        width: 30px;
+        height: 30px;
     }
 }
