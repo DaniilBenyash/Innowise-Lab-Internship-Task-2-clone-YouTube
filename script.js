@@ -31,6 +31,7 @@ if(localStorage.getItem('theme') === 'light' || localStorage.getItem('theme') ==
 function switchLogo(themeName){
     const logoLight = document.querySelector(`[data-theme="light"]`)
     const logoDark = document.querySelector(`[data-theme="dark"]`)
+    
     if(themeName === 'dark'){
         logoLight.style.display = 'none'
         logoDark.style.display = 'block'

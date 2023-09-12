@@ -6,7 +6,6 @@ body{
 }
 .search-form__input{
     background: #2c2c33;
-
 }
 .search-form__button{
     background: #2c2c33;
@@ -47,6 +46,60 @@ body{
 .main-home__arrows svg path{
     fill: white;
 }
+.main-video__nav-button-search svg path{
+    fill: white;
+}
+.profile-section__info h3{
+    color: #FFFFFF;
+}
+.profile-section__info p{
+    color: #c2c2c2;
+}
+.main-video__nav button{
+    color: #FFFFFF;
+}
+.main-video__title{
+    color: #FFFFFF;
+}
+.main-video__description{
+    color: #c2c2c2;
+}
+.main-video__rec-profile{
+    color: #FFFFFF;
+}
+.main-channel__line{
+    color: #FFFFFF;
+}
+.main-channel__arrows svg path{
+    fill: white;
+}
+.main-player__title{
+    color: #FFFFFF;
+}
+.main-player__buttons-info button{
+    color: #FFFFFF;
+}
+.main-player__buttons-info button svg path{
+    fill: #FFFFFF;
+}
+.main-player__data h2{
+    color: #FFFFFF;
+}
+.main-player__data p {
+    color: #FFFFFF;
+}
+.main-player__nav-next h3{
+    color: #FFFFFF;
+}
+.main-player__nav-next p{
+    color:#FFFFFF;
+}
+.main-player__card-title{
+    color: #FFFFFF;
+}
+.main-player__title-mobile-button svg path{
+    fill: #FFFFFF;
+}
 @media screen and (max-width: 800px){
     .header{
         background-color: #17171E;
@@ -62,6 +115,18 @@ body{
     }
     .nav__button_red svg path{
         fill: #ff0000;
+    }
+    .mobile-header{
+        background-color: #17171E;
+    }
+    .mobile-header__name{
+        color: #FFFFFF;
+    }
+    .mobile-header__search svg path{
+        fill: #FFFFFF;
+    }
+    .mobile-header__setting svg path{
+        fill: #FFFFFF;
     }
 }
 
