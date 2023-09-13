@@ -56,7 +56,7 @@
     align-items: center;
     padding-right: 12.31px;
 }
-.search-form__button object{
+.search-form__button img{
     filter: var(--button-color)
 }
 .header-buttons{
@@ -82,7 +82,7 @@
     background: none;
     border: none;
 }
-.header-buttons__bell object{
+.header-buttons__bell img{
     filter: var(--button-color)
 }
 .header-buttons__bell-value{

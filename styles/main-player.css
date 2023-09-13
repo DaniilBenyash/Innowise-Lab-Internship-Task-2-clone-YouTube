@@ -164,7 +164,7 @@
     color: var(--font-color);
     margin-top: 6px;
 }
-.main-player__buttons-info button object{
+.main-player__buttons-info button img{
     filter: var(--button-color);
 }
 .main-player__buttons-info button:hover{

@@ -56,7 +56,7 @@
 .profile-section__ball:hover{
     cursor: pointer;
 }
-.profile-section__ball object{
+.profile-section__ball img{
     margin-right: 19px;
 }
 .profile-section__button-subs{

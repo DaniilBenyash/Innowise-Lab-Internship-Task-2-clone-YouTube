@@ -28,6 +28,6 @@ a:hover{
 a:visited{
     color: black;
 }
-object{
+img{
     pointer-events: none;
 }
