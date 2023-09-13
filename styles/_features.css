@@ -1,0 +1,14 @@
+[data-theme="dark"] {
+     --bg-color: #2c2c33;
+     --bg-color-2: #17171E;
+     --bg-color-search: #2c2c33;
+     --button-color: invert(93%) sepia(94%) saturate(0%) hue-rotate(248deg) brightness(106%) contrast(106%);
+     --font-color:white;
+}
+[data-theme="light"] {
+    --bg-color: none;
+    --bg-color-2: none;
+    --bg-color-search: #EBEBEB;
+    --button-color: none;
+    --font-color: inherit;
+}

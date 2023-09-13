@@ -1,8 +1,13 @@
+@import url(/styles/_features.css);
+
 .header{
     display: flex;
     flex-direction: row;
     align-items: center;
     padding: 20px 70px 50px 32px;
+}
+.header button:hover{
+    cursor: pointer;
 }
 .header-left{
     display: flex;
@@ -14,6 +19,7 @@
     background: none;
     border: none;
     padding-top: 3px;
+    filter: var(--button-color)
 }
 .header__logo{
     padding: 0 59px 0 28px;
@@ -38,9 +44,10 @@
     font-size: 16px;
     line-height: 20.08px;
     outline: none;
+    background-color: var(--bg-color-search);
 }
 .search-form__button{
-    background: #EBEBEB;
+    background:  var(--bg-color-search);
     border: none;
     border-radius: 0 20px 20px 0;
     width: 40px;
@@ -48,6 +55,9 @@
     display: flex;
     align-items: center;
     padding-right: 12.31px;
+}
+.search-form__button object{
+    filter: var(--button-color)
 }
 .header-buttons{
     display: flex;
@@ -59,16 +69,21 @@
     background: none;
     border: none;
     background-size: 27px 20px;
+    filter: var(--button-color)
 }
 .header-buttons__menu{
     background: none;
     border: none;
     background-size: 21px 21px;
+    filter: var(--button-color)
 }
 .header-buttons__bell{
     position: relative;
     background: none;
     border: none;
+}
+.header-buttons__bell object{
+    filter: var(--button-color)
 }
 .header-buttons__bell-value{
     position: absolute;
@@ -80,6 +95,7 @@
     background-color: #FF0000;
     border-radius: 50%;
     font-size: 12px;
+
 }
 .header-buttons__search-mobile{
     display: none;
@@ -97,7 +113,7 @@
     .header{
         padding: 8px 16px 12px 16px;
         position: fixed;
-        background-color: white;
+        background-color: var(--bg-color-2);
         width: calc(100% - 32px);
         z-index: 1;
     }
@@ -125,6 +141,12 @@
     .header-buttons__search-mobile{
         display: block;
         flex-shrink: 0;
+        background: none;
+        border: none;
+        filter: var(--button-color);
+    }
+    .header-buttons__search-mobile:hover{
+        cursor: pointer;
     }
     .header-buttons__profile{
         width: max-content;
@@ -133,5 +155,8 @@
     .header-buttons__profile img{
         width: 30px;
         height: 30px;
+    }
+    .mobile-header__setting{
+        filter: var(--button-color);
     }
 }

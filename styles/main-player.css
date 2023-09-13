@@ -1,3 +1,5 @@
+@import url(/styles/_features.css);
+
 .header-player{
     padding-bottom: 30px;
 }
@@ -11,6 +13,7 @@
     justify-content: space-between;
     align-items: flex-end;
     padding: 8px 0 32px 0;
+    color: var(--font-color);
 }
 .main-player__nav-next h3{
     font-size: 36px;
@@ -61,8 +64,8 @@
 }
 .main-player__card-time{
     position: absolute;
-    bottom: 22px;
-    right: 10px;
+    bottom: 7%;
+    right: 4%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -78,6 +81,7 @@
     font-size: 26px;
     padding-bottom: 11px;
     letter-spacing: 0.3px;
+    color: var(--font-color);
 }
 .main-player__card-info{
     display: flex;
@@ -131,6 +135,7 @@
     font-size: 36px;
     padding-top: 15px;
     letter-spacing: 0.4px;
+    color: var(--font-color);
 }
 .main-player__line-info{
     display: flex;
@@ -156,19 +161,19 @@
     background: rgba(235, 235, 235, 0.3);
     border-radius: 20px;
     font-size: 16px;
-    color: #192646;
-    padding-top: 6px;
+    color: var(--font-color);
+    margin-top: 6px;
 }
-.main-player__buttons-info button svg{
-    margin-right: 8px;
+.main-player__buttons-info button object{
+    filter: var(--button-color);
+}
+.main-player__buttons-info button:hover{
+    cursor: pointer;
 }
 #main-player__button-more{
     background: none;
-    padding: 0 0 0 30px;
+    margin: 0 0 0 30px;
     width: min-content;
-}
-#main-player__button-more svg{
-    margin: 0;
 }
 .video-player__buttons{
     display: flex;
@@ -179,6 +184,9 @@
 .video-player__buttons button{
     background: none;
     border: none;
+}
+.video-player__buttons button:hover{
+    cursor: pointer;
 }
 .video-player__left-buttons{
     display: flex;
@@ -226,6 +234,7 @@
 .main-player__data h2{
     font-size: 26px;
     padding-bottom: 5px;
+    color: var(--font-color);
 }
 .main-player__pub-date{
     font-size: 13px;
@@ -237,12 +246,16 @@
     font-size: 16px;
     max-width: 820px;
     padding-bottom: 15px;
+    color: var(--font-color);
 }
 .main-player__button-more{
     background: none;
     border: none;
     font-size: 20px;
     color: #C2C2C2;
+}
+.main-player__button-more:hover{
+    cursor: pointer;
 }
 .main-player__button-sub{
     border: none;
@@ -252,6 +265,9 @@
     background-color: #FF0000;
     color: #FFFFFF;
     font-size: 16px;
+}
+.main-player__button-sub:hover{
+    cursor: pointer;
 }
 .mobile-header__setting{
     display: none;
@@ -271,7 +287,10 @@
 .main-player__mobile-button-sub{
     display: none;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1150px) {
+    .main-player{
+        width: 100%;
+    }
     .header-player{
         width: 100vw;
         box-sizing: border-box;
@@ -299,11 +318,9 @@
         display: none;
     }
     .video-player{
-        margin-top: 60px;
         position: relative;
     }
     .video-player img{
-        height: 180px;
         width: 100%;
     }
     .video-player__mobile-panel-control{
@@ -366,9 +383,7 @@
         padding: 0;
         z-index: 5;
     }
-    .main-player__buttons-info button svg{
-        margin-right: 0;
-    }
+
     .main-player__mobile-border-line-info{
         display: block;
         box-sizing: border-box;
@@ -452,7 +467,7 @@
         padding-bottom: 3px;
     }
     .main-player__card-image img{
-        height: 150px;
+        height: 100%;
     }
     .main-player__card-title{
         font-size: 16px;
@@ -466,5 +481,10 @@
     }
     .main-player__cards-section{
         padding-bottom: 60px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .video-player{
+        margin-top: 60px;
     }
 }

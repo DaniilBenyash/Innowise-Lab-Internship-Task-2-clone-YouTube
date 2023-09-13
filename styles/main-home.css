@@ -1,3 +1,5 @@
+@import url(/styles/_features.css);
+
 .main-home{
     max-width: calc(100% - 255px);
 }
@@ -12,6 +14,7 @@
 .main-home__line-title{
     font-size: 26px;
     letter-spacing: 0.3px;
+    color: var(--font-color);
 }
 .main-home__right-section{
     position: relative;
@@ -20,6 +23,14 @@
     flex-direction: row;
     gap: 40px;
     align-items: center;
+}
+.main-home__arrow{
+    background: none;
+    border: none;
+    filter: var(--button-color);
+}
+.main-home__arrow:hover{
+    cursor: pointer;
 }
 .main-home__button-subs{
     border: none;
@@ -30,6 +41,9 @@
     color: #FFFFFF;
     font-size: 16px;
 }
+.main-home__button-subs:hover{
+    cursor: pointer;
+}
 .profile-home{
     display: flex;
     flex-direction: row;
@@ -38,6 +52,7 @@
     font-size: 26px;
     font-weight: 600;
     letter-spacing: 0.3px;
+    color: var(--font-color);
 }
 .profile-home img{
     width: 50px;
@@ -47,6 +62,10 @@
     display: flex;
     align-items: baseline;
     gap: 19px;
+    
+}
+.profile-home__name a{
+    color: var(--font-color);
 }
 .profile-home__recommended{
     font-size: 15.7px;
@@ -80,10 +99,13 @@
     position: relative;
     margin-bottom: 6px;
 }
+.card__image img{
+    border-radius: 14px;
+}
 .card__time{
     position: absolute;
-    bottom: 13px;
-    right: 10px;
+    bottom: 7%;
+    right: 4%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -99,6 +121,7 @@
     font-size: 16px;
     line-height: 20.08px;
     letter-spacing: 0.2px;
+    color: var(--font-color);
 }
 .card__info{
     font-size: 13px;
@@ -129,7 +152,7 @@
         flex-direction: column;
         padding: 0 16px;
         margin: 0;
-        align-items: center;
+        align-items: stretch;
         gap: 30px;
         padding-bottom: 64.55px;
     }
@@ -141,6 +164,5 @@
     }
     .card__image img{
         width: 100%;
-        height: 150px;
     }
 }

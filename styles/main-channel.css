@@ -1,3 +1,5 @@
+@import url(/styles/_features.css);
+
 .main-channel{
     max-width: calc(100% - 255px);
 }
@@ -33,6 +35,7 @@
 .profile-section__info h3{
     font-size: 26px;
     letter-spacing: 0.3px;
+    color: var(--font-color);
 }
 .profile-section__info p{
     font-size: 13px;
@@ -46,9 +49,14 @@
     align-items: center;
 }
 .profile-section__ball{
-    display: contents;
+    background: none;
+    border: none;
+    filter: var(--button-color);
 }
-.profile-section__ball svg{
+.profile-section__ball:hover{
+    cursor: pointer;
+}
+.profile-section__ball object{
     margin-right: 19px;
 }
 .profile-section__button-subs{
@@ -59,6 +67,9 @@
     background-color: #FF0000;
     color: #FFFFFF;
     font-size: 16px;
+}
+.profile-section__button-subs:hover{
+    cursor: pointer;
 }
 .main-video{
     display: flex;
@@ -80,6 +91,15 @@
     font-size: 18px;
     margin-right: 60px;
     padding: 0 3px;
+    color: var(--font-color);
+}
+
+.main-video__nav button:hover{
+    cursor: pointer;
+    color: red;
+    border-bottom: 1px solid red;
+    padding-bottom: 3px;
+    filter: invert(15%) sepia(92%) saturate(6935%) hue-rotate(358deg) brightness(95%) contrast(111%);
 }
 #main-video__nav-button_red{
     color: red;
@@ -90,6 +110,7 @@
     position: relative;
     left: -8px;
     top: 3px;
+    filter: var(--button-color)
 }
 .main-video__nav-arrow{
     display: none;
@@ -128,11 +149,13 @@
     font-size: 26px;
     line-height: 34px;
     margin-bottom: 10px;
+    color: var(--font-color);
 }
 .main-video__description{
     font-size: 16px;
     line-height: 22px;
     margin-bottom: 30px;
+    color: var(--font-color);
 }
 .main-video__info{
     font-size: 16px;
@@ -155,10 +178,12 @@
     flex-direction: row;
     align-items: center;
     gap: 20px;
+    color: var(--font-color);
 }
 .main-video__rec-profile p{
     font-size: 18px;
     font-weight: 600;
+    white-space: nowrap;
 }
 .main-channel__line{
     display: flex;
@@ -167,6 +192,7 @@
     justify-content: space-between;
     padding-right: 149px;
     align-items: flex-end;
+    color: var(--font-color);
 }
 .main-channel__arrows{
     display: flex;
@@ -181,9 +207,58 @@
 .mobile-header{
     display: none;
 }
+@media screen and (max-width: 1510px) {
+    .main-video{
+        flex-direction: column;
+        align-items: flex-start;
+        padding-right: 100px;
+    }
+    .main-video__rec{
+        display: grid;
+       grid-template-columns: repeat(4, 1fr);
+       grid-template-rows: repeat(2, min-content);
+       margin-top: 20px;
+       padding: 0;
+    }
+    .main-video__rec h4{
+        grid-column-start: 1;
+        grid-column-end: 5;
+    }
+    .main-video__rec-profile{
+        margin-right: 30px;
+    }
+    .main-video__nav-button-search{
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .nav{
+        display: none;
+    }
+    .main-channel{
+        margin: 0 auto;
+        max-width: 100%;
+        padding-left: 70px;
+        box-sizing: border-box;
+    }
+}
+@media screen and (max-width: 1100px) {
+    .main-video__nav button{
+        margin-top: 20px;
+    }
+    .main-video__video{
+        flex-direction: column;
+    }
+    .main-video__data{
+        width: 540px;
+    }
+}
 @media screen and (max-width: 800px) {
     .header{
         display: none;
+    }
+    .main-channel{
+        padding-left: 0;
     }
     .mobile-header{
         box-sizing: border-box;
@@ -193,7 +268,7 @@
         width: 100%;
         padding: 12px 20px 19px 16px;
         position: fixed;
-        background-color: white;
+        background-color: var(--bg-color-2);
         top: 0;
         z-index: 2;
         border: none;
@@ -203,6 +278,7 @@
         margin-left: 10px;
         padding: 0 0 6px 0;
         letter-spacing: 0.1px;
+        color: var(--font-color);
     }
     .mobile-header__section{
         display: flex;
@@ -210,6 +286,7 @@
     }
     .mobile-header__search{
         padding-right: 45px;
+        filter: var(--button-color);
     }
     .main-channel__background{
         width: 100vw;
@@ -291,6 +368,7 @@
     }
     .main-video__nav-arrow{
         display: block;
+        filter: var(--button-color);
     }
     .main-channel__line{
         display: none;
