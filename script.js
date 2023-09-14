@@ -11,12 +11,8 @@ function switchTheme(theme){
     const logoLight = document.querySelector('#light-logo')
     const logoDark = document.querySelector('#dark-logo')
 
-    theme === THEME.DARK ? 
-    (logoLight.style.display = 'none', 
-    logoDark.style.display = 'block') 
-    : 
-    (logoDark.style.display = 'none',
-    logoLight.style.display = 'block')
+    logoLight.style.display = theme === 'dark' ? 'none' : 'block'
+    logoDark.style.display = theme === 'dark' ? 'block' : 'none'
 
     const body = document.getElementById('theme')
 
