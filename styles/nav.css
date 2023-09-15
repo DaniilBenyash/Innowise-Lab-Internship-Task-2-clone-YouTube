@@ -1,0 +1,106 @@
+@import url(/styles/_features.css);
+
+.nav{
+    min-width: 224px;
+    padding-left: 31px;
+    height: 100%;
+    font-family: Mulish, sans-serif;
+}
+.nav button:hover{
+    cursor: pointer;
+}
+.nav__buttons{
+    display: flex;
+    flex-direction: column;
+}
+.nav__button{
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    gap: 13px;
+    font-size: 16px;
+    line-height: 20.08px;
+    font-weight: 500;
+    color: #898989;
+    filter: var(--button-color);
+}
+.nav__button div{
+    width: 21px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.nav__button:hover{
+    filter: invert(15%) sepia(92%) saturate(6935%) hue-rotate(358deg) brightness(95%) contrast(111%);
+}
+#nav__button_red{
+    color: #ff0000;
+    filter: none;
+}
+.nav__button_margin_28{
+    margin-bottom: 28px;
+}
+.nav__button_margin_60{
+    margin-bottom: 60px;
+}
+.nav__button_margin_29{
+    margin-bottom: 29px;
+}
+.nav__button_margin_58{
+    margin-bottom: 58px;
+}
+.nav__button_margin-last{
+    margin: 104px 0 40px;
+}
+.nav__subs h3{
+    font-size: 18px;
+    line-height: 22.59px;
+    margin-bottom: 30px;
+    letter-spacing: 0.3px;
+    color: var(--font-color);
+}
+.nav__sub{
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-size: 16px;
+    line-height: 20.08px;
+    color: #898989;
+    margin-bottom: 23px;
+}
+.nav_mobile{
+    display: none;
+}
+#switchTheme:focus{
+    cursor: pointer;
+}
+@media screen and (max-width: 800px){
+    .nav{
+        display: none;
+    }
+    .nav_mobile{
+        display: block;
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        flex-direction: row;
+        align-items: flex-end;
+        justify-content: space-around;
+        background-color: var(--bg-color-2);
+        border-top: 1px solid #f1f1f1;
+        width: 100%;
+        padding: 10px 0 8px 2px;
+    }
+    .nav__button{
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+        font-size: 10px;
+        line-height: 12.55px;
+    }
+}

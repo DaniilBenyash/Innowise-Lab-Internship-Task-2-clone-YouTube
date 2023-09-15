@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>YouTube Concept</title>
+    <link rel="stylesheet" href="/styles/index.css">
+    <link rel="stylesheet" href="/styles/header.css">
+    <link rel="stylesheet" href="/styles/nav.css">
+    <link rel="stylesheet" href="/styles/main-home.css">
+    <link rel="stylesheet" href="/styles/main-player.css">
+</head>
+<body id="theme">
+    <!-- Header -->
+    <header class="header header-player">
+        <div class="header-left">
+            <button class="header__burger">
+                <img src="/images/header/icons/burger.svg" alt="burger">
+            </button>
+            <a href="/index.html">
+                <img class="header__logo" id="light-logo" src="/images/header/icons/logo-light-theme.svg" alt="">
+            </a>
+            <a href="/index.html">
+                <img class="header__logo" id="dark-logo" src="/images/header/icons/logo-dark-theme.svg" alt="">
+            </a>
+            <div class="search-form">
+            <input type="search" class="search-form__input" placeholder="Search">
+            <button class="search-form__button">
+                <img src="/images/header/icons/search.svg" alt="">
+            </button>
+            </div>
+        </div>
+        <div class="header-buttons">
+            <button class="header-buttons__camera">
+                <img src="/images/header/icons/camera.svg" alt="">
+            </button>
+            <button class="header-buttons__menu">
+                <img src="/images/header/icons/menu.svg" alt="">
+            </button>
+            <button class="header-buttons__bell">
+                <div class="header-buttons__bell-value">3</div>
+                <img src="/images/header/icons/bell.svg" alt=""> 
+            </button>
+            <button class="header-buttons__search-mobile">
+                <img src="/images/header/icons/search.svg" alt="">
+            </button>
+            <button class="header-buttons__profile">
+                <img src="/images/header/profile.png" alt="profile">
+            </button>
+            <div class="mobile-header__setting">
+                <img src="/images/header/icons/mobile-setting.svg" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- ////////// -->
+    <!-- Navigation  -->
+    <section class="section">
+        <main class="main-player">
+            <section class="main-player__left-section">
+                <a>
+                    <article class="video-player">
+                        <img src="/images/main-player/player.png" alt="video">
+                        <div class="video-player__panel-control">
+                            <div class="video-player__time">
+                                <p>1:34</p>
+                                <p>19:00</p>
+                            </div>
+                            <progress value="0.15" max=""  class="video-player__timeline"></progress>
+                            <div class="video-player__buttons">
+                                <div class="video-player__left-buttons">
+                                    <button>
+                                        <img src="/images/main-player/icons/pause.svg" alt="">
+                                    </button>
+                                    <button>
+                                        <img src="/images/main-player/icons/next.svg" alt="">
+                                    </button>
+                                    <button>
+                                        <img src="/images/main-player/icons/volume.svg" alt=""> 
+                                    </button>
+                                    <progress value="0.4" max=""  class="video-player__sound"></progress>
+                                </div>
+                                <div class="video-player__right-buttons">
+                                    <button>
+                                        <img src="/images/main-player/icons/subtitles.svg" alt="">   
+                                    </button>
+                                    <button>
+                                        <img src="/images/main-player/icons/settings.svg" alt="">
+                                    </button>
+                                    <button>
+                                        <img src="/images/main-player/icons/size.svg" alt="">  
+                                    </button>
+                                    <button>
+                                        <img src="/images/main-player/icons/full-screen.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-player__mobile-panel-control">
+                            <button class="video-player__mobile-pause">
+                                <img src="/images/main-player/icons/mobile-pause.svg" alt="">
+                            </button>
+                            <p>1:34</p>
+                            <progress value="0.15" max=""  class="video-player__timeline"></progress>
+                            <p>-10:00</p>
+                            <button class="video-player__mobile-sound">
+                                <img src="/images/main-player/icons/mobile-volume.svg" alt="">
+                            </button>
+                        </div>
+                    </article>
+                </a>
+                
+                <h1 class="main-player__title">
+                    Dude You Re Getting A Telescope
+                    <div class="main-player__title-mobile-button">
+                        <img src="/images/main-player/icons/mobile-arrow.svg" alt="">
+                    </div>
+                </h1>
+                <div class="main-player__line-info">
+                    <p>123k views</p>
+                    <div class="main-player__buttons-info">
+                        <button>
+                            <img src="/images/main-player/icons/like.svg" alt="">
+                            123k
+                        </button>
+                        <button>
+                            <img src="/images/main-player/icons/dislike.svg" alt="">
+                                435k
+                        </button>
+                        <button>
+                            <img src="/images/main-player/icons/share.svg" alt="">
+                            Share
+                        </button>
+                        <button id="main-player__button-more">
+                            <img src="/images/main-player/icons/more.svg" alt="">
+                        </button>
+                    </div>
+                </div>
+                <div class="main-player__mobile-border-line-info"></div>
+                <div class="main-player__bottom-info">
+                    <div class="main-player__under-video">
+                        <div class="main-player__logo-profile">
+                            <a href="/channel-page.html">
+                                <img src="/images/main-player/profile.png" alt="logo profile">
+                            </a>
+                        </div>
+                        <div class="main-player__data">
+                            <a href="/channel-page.html">
+                                <h2>Food & Drink</h2>
+                            </a>
+                            <p class="main-player__pub-date">Published on 14 Jun 2019</p>
+                            <p class="main-player__subs-mobile">245k subscribed</p>
+                            <p class="main-player__description">A successful marketing plan relies heavily on the pulling-power of advertising copy. Writing result-oriented ad copy is difficult, as it must appeal to, entice, and convince consumers to take action. There is no magic formula to write perfect ad copy; it is based on a number of factors, including ad placement, demographic, even the consumer’s mood when they see your ad. </p>
+                            <buttom class="main-player__button-more">Show more</buttom>
+                        </div>
+                    </div>
+                    <button class="main-player__button-sub">Subscribe 2.3m</button>
+                    <button class="main-player__mobile-button-sub">Subscribe</button>
+                </div>
+            </section>
+            <nav class="main-player__nav">
+                <div class="main-player__nav-next">
+                    <h3>Next</h3>
+                    <div class="main-player__nav-next-right">
+                        <p>AUTOPLAY</p>
+                        <button class="main-player__switcher">
+                            <div></div>
+                        </button>
+                    </div>
+                </div>
+                <section class="main-player__cards-section">
+                    <article class="main-player__card">
+                        <div class="main-player__card-image">
+                            <img src="/images/main-home/video-small.png" alt="video">
+                            <div class="main-player__card-time">4:15</div>
+                        </div>
+                        <h4 class="main-player__card-title">Baby Monitor Technology</h4>
+                        <div class="main-player__card-info">
+                            <p>123k views</p>
+                            <p>Dollie Blair</p>
+                        </div>
+                    </article>
+                    <article class="main-player__card">
+                        <div class="main-player__card-image">
+                            <img src="/images/main-home/video-small.png" alt="video">
+                            <div class="main-player__card-time">4:15</div>
+                        </div>
+                        <h4 class="main-player__card-title">Baby Monitor Technology</h4>
+                        <div class="main-player__card-info">
+                            <p>123k views</p>
+                            <p>Dollie Blair</p>
+                        </div>
+                    </article>
+                    <article class="main-player__card">
+                        <div class="main-player__card-image">
+                            <img src="/images/main-home/video-small.png" alt="video">
+                            <div class="main-player__card-time">4:15</div>
+                        </div>
+                        <h4 class="main-player__card-title">Baby Monitor Technology</h4>
+                        <div class="main-player__card-info">
+                            <p>123k views</p>
+                            <p>Dollie Blair</p>
+                        </div>
+                    </article>
+                    <article class="main-player__card">
+                        <div class="main-player__card-image">
+                            <img src="/images/main-home/video-small.png" alt="video">
+                            <div class="main-player__card-time">4:15</div>
+                        </div>
+                        <h4 class="main-player__card-title">Baby Monitor Technology</h4>
+                        <div class="main-player__card-info">
+                            <p>123k views</p>
+                            <p>Dollie Blair</p>
+                        </div>
+                    </article>
+                </section>
+            </nav>
+        </main>
+        <!-- ////////// -->
+        <!-- Mobile navigation -->
+        <nav class="nav_mobile">
+            <button class="nav__button" id="nav__button_red">
+                <img src="/images/nav/icons/home.svg" alt=""> 
+                Home
+            </button>
+            <button class="nav__button">
+                <img src="/images/nav/icons/trending.svg" alt=""> 
+                Trending
+            </button>
+            <button class="nav__button">
+                <img src="/images/nav/icons/subscriptions.svg" alt="">  
+                Subcriptions
+            </button>
+            <button class="nav__button">
+                <img src="/images/nav/icons/library.svg" alt="">                    
+                Library
+            </button>
+        </nav>
+    </section>
+    <button class="nav__button nav__button_padding-last" id="switchTheme" style="display: none;">
+        <div class="mobile-header__setting">
+            <img src="/images/header/icons/mobile-setting.svg" alt="">
+        </div>
+        Setting
+    </button>
+    <!-- ////////// -->
+    <script src="/script.js"></script>
+</body>
+</html>
